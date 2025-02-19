@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.483));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-screen bg-black">
+        <div class="imagecontainer w-full h-screen relative overflow-hidden">
+            <div class="maincard z-[3] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%]">
+                <img class= "w-full h-full object-cover" src="" alt="">
+            </div>
+            <div class="incomingcard z-[2] w-[130%] absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 h-[130%]">
+                <img class= "w-full h-full object-cover" src="" alt="">
+            </div>
+        </div>
+        <div class="absolute top-0 left-0 z-[4] w-full h-screen flex flex-col justify-between">
+            <div class="navbar px-5 py-6 flex justify-between items-center text-white">
+                <div class = "profileimg w-[3rem] h-[3rem] rounded-full overflow-hidden bg-red-600">
+                    <img class="w-full h-full object-cover" src="" alt="">
+                </div>
+                <h3 class = "font-medium text-2xl tracking-tighter">They liked you</h3>
+                <div class="chaticon relative flex items-center justify-center w-[3rem] h-[3rem] rounded-full bg-white/20">
+                    <i class="opacity-80 ri-chat-3-fill"></i>
+                    <div class = "badge flex items-center justify-center rounded-full absolute top-0 right-0 -translate-y-[5px] translate-x-[3px] w-5 h-5 bg-[#FC5149]">
+                        <h5 class = "text-[13px] font-medium">3</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="detailscontainer w-full">
+                <div class="details px-5 py-6 w-full">
+                    <div class="ele location flex gap-3">
+                        <i class="w-[1.6rem] h-[1.6rem] flex items-center justify-center rounded-full font-semibold bg-white ri-corner-left-up-line"></i>
+                        <h3 class="text-white">California, USA</h3>
+                    </div>
+                    <div class="ele name flex gap-4 text-white mt-1">
+                        <h1 class="font-regular tracking-tighter text-7xl">Lily</h1>
+                        <h1 class="font-regular tracking-tighter text-7xl opacity-60">20</h1>
+                    </div>
+                    <div class="ele tags flex gap-3 text-white mt-4">
+                        
+                        
+                    </div>
+                    <div class="ele bio text-white/80 mt-5">
+                        <h3 class="text-xl">Bio</h3>
+                        <p class="text-lg mt-3"></p>
+                    </div>
+                    <div class="ele flex items-start mt-4 gap-1">
+                        <button class="reject py-3 w-1/2 rounded-xl bg-white">
+                            <i class="text-3xl font-semibold ri-close-line"></i>
+                        </button>
+                        <button class="accept py-3 w-1/2 rounded-xl bg-[#FC5149]">
+                            <i class="text-3xl font-semibold text-white ri-heart-2-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
